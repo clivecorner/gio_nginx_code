@@ -1,0 +1,23 @@
+Pulling nginx (nginx:1.19-alpine)...
+1.19-alpine: Pulling from library/nginx
+540db60ca938: Pull complete
+197dc8475a23: Pull complete
+39ea657007e5: Pull complete
+37afbf7d4c3d: Pull complete
+0c01f42c3df7: Pull complete
+d590d87c9181: Pull complete
+Digest: sha256:07ab71a2c8e4ecb19a5a5abcfb3a4f175946c001c8af288b1aa766d67b0d05d2
+Status: Downloaded newer image for nginx:1.19-alpine
+Creating programgwithio-app   ... done
+Creating programgwithio-nginx ... done
+Attaching to programgwithio-app, programgwithio-nginx
+programgwithio-nginx | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+programgwithio-nginx | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+programgwithio-nginx | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+programgwithio-nginx | 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf is not a file or does not exist
+programgwithio-nginx | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+programgwithio-nginx | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+programgwithio-nginx | /docker-entrypoint.sh: Configuration complete; ready for start up
+programgwithio-app | [15-Dec-2023 12:33:43] NOTICE: fpm is running, pid 1
+programgwithio-app | [15-Dec-2023 12:33:43] NOTICE: ready to handle connections
+
