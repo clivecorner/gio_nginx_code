@@ -1,19 +1,19 @@
-version: "2.2"
+version: "3.3"
 
 services:
   app:
     build:
       context: ./
       dockerfile: dockerfile
-    container_name: gio_app
+    container_name: programgwithio-app
     restart: always
     working_dir: /var/www
     volumes:
       - ../src:/var/www
 
   nginx:
-    image: nginx:1.25
-    container_name: gio_nginx
+    image: nginx:1.19-alpine
+    container_name: programgwithio-nginx
     restart: always
     ports:
       - "8000:80"
